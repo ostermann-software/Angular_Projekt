@@ -1,0 +1,11 @@
+<div class="con_order">
+    <h2 class="font_economica_bold">HOW TO ORDER</h2>
+    <br />
+    <div class="con_order_body font_economica_bold">
+        <div class="con_order_body_part" *ngFor="let step of steps">
+            <img [src]="step.image" />
+            <br />
+            <h3>{{ step.title }}</h3>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="con_menu">
+    <h2 class="font_economica_bold">OUR MENU</h2>
+    <div class="con_menu_body">
+        <div *ngFor="let item of menuItems" [ngClass]="{
+        'con_menu_body_left': item.side === 'left',
+        'con_menu_body_right': item.side === 'right'
+      }">
+            <div>
+                <img [src]="item.image" />
+            </div>
+            <div class="con_menu_body_parts">
+                <h3 class="font_economica_bold">{{ item.name }}</h3>
+                <table class="font_raleway_bold table">
+                    <tr *ngFor="let p of item.prices">
+                        <td class="table_row">{{ p.type }}</td>
+                        <td>{{ p.price }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+// import { MainContent } from './main-content/main-content';
+// import { Imprint } from './imprint/imprint';
+import { Footer } from './shared/component/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

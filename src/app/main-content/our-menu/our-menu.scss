@@ -1,0 +1,42 @@
+.con_menu {
+    background-image: url('./../../../assets/img/background.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .con_menu_body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .con_menu_body_left,
+        .con_menu_body_right {
+            display: flex;
+            width: 80%;
+            margin: 20px 0;
+
+            &.con_menu_body_left {
+                flex-direction: row;
+            }
+
+            &.con_menu_body_right {
+                flex-direction: row-reverse;
+            }
+
+            div img {
+                max-width: 200px;
+                height: auto;
+            }
+
+            .con_menu_body_parts {
+                margin-left: 20px;
+            }
+        }
+    }
+}

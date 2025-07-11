@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    src: url(./assets/font/raleway-v36-latin/raleway-v36-latin-800.woff2);
+}
+
+.fontRaleway {
+    font-family: 'Raleway';
+}
+
+footer nav a {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  z-index: 1000;
+}

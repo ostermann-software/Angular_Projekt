@@ -1,0 +1,44 @@
+nav {
+    width: calc(100% - 64px);
+    padding: 12px;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    >img {
+        width: 64px;
+        height: 64px;
+    }
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+
+        >a {
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.phone_btn {
+    display: flex;
+    justify-content: center;
+
+    >img {
+        width: 24px;
+        height: 24px;
+    }
+}
